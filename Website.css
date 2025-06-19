@@ -1,0 +1,302 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 12px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS VARIABLE */
+:root{
+    --navbar-height: 59px;
+
+}
+/*  NAVIGATION BAR */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+
+
+}
+#navbar ::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+/* NAVIGATION BAR: LOGO AND IMAGE  */
+.logo6{
+    margin: 15px 5px;
+    padding-right: 250px;
+
+}
+.logo6 img{
+    height: 56px;
+    margin: 14px 15px;
+
+}
+/* NAVIGATION BAR: LIST STYLING */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: blueviolet;
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+
+}
+
+
+/*  Home Section   */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px 200px;
+    height: 373px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+
+}
+#home::before{
+    content: "";
+    background: url('../cloud\ takeoff.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+    
+}
+#home h1{
+    color: white;
+    text-align: center;
+    padding-top: 82px;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 215px;
+    padding-top: 65px;
+}
+
+/* gallery */
+#gallerysection{
+    top: 160px;
+    height: 60px;
+    width: 3rem;
+    align-items: center;
+}
+#gallerysection::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    left: 0px;
+    background: url('plane.jpg');
+    background: url('background\ 2.jpg');
+    background: url('potraitrunway.jpg');
+}
+#gallerysect::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    left: 0px;
+    background: url('plane.jpg');
+    background: url('background\ 2.jpg');
+}
+#gallery-section.h-primary center{
+    text-align: center;
+
+}
+#gallery-section.gallery-non{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#gallery img{
+    height: 60px;
+    width: 120px;
+    left: 0px;
+}
+/*  contact section */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0px;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('cityview.jpg');
+    background: url('window\ seaview.jpg');
+
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* carrier  */
+#carrier{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+/* about */
+#about{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#about::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0px;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('airport3.jpg');
+
+
+}
+/*  Services Section  */
+#services-container.h-primary center{
+    padding-top: 150px;
+    
+}
+#services-container::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0px;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('airport.jpg');
+
+
+}
+.back-video{
+    position: relative;
+
+
+}
+@media (min-aspect-ratio:16/9){
+    .back-video{
+        width:100%;
+        height:450px;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .back-video{
+        width:100%;
+        height:450px;
+    }
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px 35px;
+}
+/* utility class  */
+.h.primary{
+    font-size: 3.8rem;
+    padding-top: 11px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding-right: 1045px;
+
+}
+
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    padding-bottom: 14px;
+}
+.bttn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: darkkhaki;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    padding-bottom: 14px;
+    align-items: center;
+}
+.center{
+    text-align: center;
+}
+
+
